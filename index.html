@@ -20,7 +20,16 @@
                 "last_appid": prevAppId,
             }
             console.log(input_data);
+            
+            let params = {
+                "key": key,
+                "input_json": json.dumps(input_data)
+            }
+
+            response = new Response(URL, params=params);
+            console.log("REsponse="+response);
             break;
+            
         }
 
 
