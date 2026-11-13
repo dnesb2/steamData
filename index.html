@@ -35,4 +35,31 @@
 
 
     </script>
+    <script type="text/javascript">
+    	var g_AccountID = 931116235;
+    	var g_Languages = ["english"];
+    	var g_sessionID = "2e96fb7598ca3ffd4f894d79";
+    	var g_ServerTime = 1794603471;
+    	var g_bUseNewCartAPI = true;
+    
+    			$J( InitMiniprofileHovers( 'https%3A%2F%2Fstore.steampowered.com%2F' ) );
+    	
+    	
+    	if ( typeof GStoreItemData != 'undefined' )
+    	{
+    		GStoreItemData.AddNavParams({
+    			__page_default: "1_26_26_",
+    			__page_default_obj: {"domain":"store.steampowered.com","controller":"stats","method":"stats","submethod":"","feature":null,"depth":null,"countrycode":"US","webkey":null,"is_client":false,"curator_data":null,"is_likely_bot":false,"is_utm":null},
+    			__originating_obj: {"domain":"store.steampowered.com","controller":"external-site","method":"referral","submethod":"","feature":"google","depth":0,"countrycode":"","webkey":null,"is_client":false,"curator_data":null,"is_likely_bot":false,"is_utm":false},
+    			storemenu_recommendedtags: "1_26_26__17"		});
+    	}
+    
+    	if ( typeof GDynamicStore != 'undefined' )
+    	{
+    		GDynamicStore.Init(931116235, false, "", {"primary_language":-1,"secondary_languages":"0","platform_windows":0,"platform_mac":0,"platform_linux":0,"timestamp_updated":0,"hide_store_broadcast":0,"review_score_preference":0,"timestamp_content_descriptor_preferences_updated":0,"provide_deck_feedback":0,"additional_languages":null,"game_frame_rate_reporting":0,"disable_microtrailers":0,"disable_animated_marketing":0}, 'US',
+    			{"bNoDefaultDescriptors":false});
+    		GStoreItemData.SetCurrencyFormatter(function( nValueInCents, bWholeUnitsOnly ) { var fmt = function( nValueInCents, bWholeUnitsOnly ) {	var format = v_numberformat( nValueInCents / 100, bWholeUnitsOnly ? 0 : 2, ".", ","); return format; };var strNegativeSymbol = '';	if ( nValueInCents < 0 ) { strNegativeSymbol = '-'; nValueInCents = -nValueInCents; }return strNegativeSymbol + "$" + fmt( nValueInCents, bWholeUnitsOnly );});
+    		GStoreItemData.SetCurrencyMinPriceIncrement(1);
+    	}
+    </script>
 </html>
