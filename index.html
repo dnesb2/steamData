@@ -23,7 +23,7 @@
             
             let params = {
                 "key": key,
-                "input_json": json.dumps(input_data)
+                "input_json": JSON.stringify(input_data)
             }
 
             response = new Response(URL, params=params);
